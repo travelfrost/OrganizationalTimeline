@@ -1,0 +1,11 @@
+version: '2'
+services:
+  organizationaltimeline-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/OrganizationalTimeline/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=OrganizationalTimeline
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
